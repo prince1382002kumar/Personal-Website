@@ -26,7 +26,7 @@ nav{
     height: 8vh;
     background-color: rgb(57, 57, 133);
     padding: 0 0 0 50px;
-    position: ;
+
 }
 
 nav .left{
@@ -60,9 +60,6 @@ nav ul li a:hover {
     height: 82vh;
 }
 
-.section1 >div{
-    /* width: 30%; */
-}
 
 .section1 .left{
     /* background-color: brown; */
@@ -95,6 +92,45 @@ footer .link a{
     color: white;
     text-decoration: none;
     margin: 0 2vw;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30vh;
+    width: 80vw;
+    border: 2px;
+    margin: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.123);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.project .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.project .left img{
+    height: 80%;   
+}
+
+.project .right{
+    width: 50%;
 }
 
 /* _____________ */

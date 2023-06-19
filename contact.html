@@ -24,6 +24,19 @@
         </nav>
     </header>
 
+    <main>
+        <div class="container">
+            <p class="specialtext">Contact ME!</p>
+            <form  class="contactform" onsubmit="sendEmail(); reset(); return false;">
+                <input type="text" name="" id="name" placeholder="Your Name" required>
+                <input type="email" class="email" placeholder="E-Mail" required>
+                <input type="number" class="phoneno" placeholder="Phone No.">
+                <textarea name="" id="message" placeholder="Message" cols="30" rows="10" required></textarea>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </main>
+
     <hr>
 
     <footer>
@@ -31,6 +44,8 @@
         <div class="link"><a target="_blank" href="https://www.linkedin.com/in/prince-kumar-508119234">Linked in</a></div>
         <div class="link"><a target="_blank" href="https://github.com/princekumargit">Git Hub</a></div>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="app.js"></script>
     
 </body>
 </html>

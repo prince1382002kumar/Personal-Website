@@ -26,8 +26,10 @@
 
     <main>
         <div class="container">
-            <p class="specialtext">Contact ME!</p>
             <form  class="contactform" onsubmit="sendEmail(); reset(); return false;">
+                <div>
+                    <p class="specialtext" id="contactme">Contact ME!</p>
+                </div>
                 <input type="text" name="" id="name" placeholder="Your Name" required>
                 <input type="email" class="email" placeholder="E-Mail" required>
                 <input type="number" class="phoneno" placeholder="Phone No.">

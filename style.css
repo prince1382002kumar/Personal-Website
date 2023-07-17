@@ -168,6 +168,10 @@ main{
     font-weight: bold;
 }
 
+.hid{
+    visibility: hidden;
+}
+
 /* _____________ */
 
 .specialtext{

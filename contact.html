@@ -27,13 +27,19 @@
     <main>
         <div class="container">
             <p class="specialtext">Contact ME!</p>
-            <form  class="contactform" onsubmit="sendEmail(); reset(); return false;">
-                <input type="text" name="" id="name" placeholder="Your Name" required>
-                <input type="email" class="email" placeholder="E-Mail" required>
-                <input type="number" class="phoneno" placeholder="Phone No.">
-                <textarea name="" id="message" placeholder="Message" cols="30" rows="10" required></textarea>
+            <form  class="contactform" id="firstForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email"  placeholder="E-Mail" required>
+                <input type="text" id="phoneno" placeholder="Phone No.">
+                <textarea  id="message"  placeholder="Message" cols="30" rows="10" required></textarea>
                 <button type="submit">SUBMIT</button>
             </form>
+
+            <form action="https://formspree.io/f/xoqzgybd" method="post" id="secondForm">
+                <input type="email" name="email" class="hid">
+                <textarea name="message" id="" cols="1" rows="1" class="hid"></textarea>
+            </form>
+
         </div>
     </main>
 
@@ -44,8 +50,27 @@
         <div class="link"><a target="_blank" href="https://www.linkedin.com/in/prince-kumar-508119234">Linked in</a></div>
         <div class="link"><a target="_blank" href="https://github.com/princekumargit">Git Hub</a></div>
     </footer>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="app.js"></script>
-    
+
+    <script>
+        let firstForm = document.getElementById('firstForm');
+        let secondForm = document.getElementById('secondForm');
+        let emailInput = document.querySelector('#secondForm input[name="email"]');
+        let messageInput = document.querySelector('#secondForm textarea[name="message"]');
+
+        firstForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            let emailtext = document.querySelector('#email').value;
+            let messagetext = document.getElementById('name').value + '/n' +
+                document.getElementById('phoneno').value + '/n' +
+                document.getElementById('message').value;
+
+            emailInput.value = emailtext;
+            messageInput.value = messagetext;
+
+            secondForm.submit();
+            firstForm.reset();
+        });
+    </script>
 </body>
 </html>

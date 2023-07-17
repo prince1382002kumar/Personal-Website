@@ -62,17 +62,13 @@ nav ul li a:hover {
 
 
 .section1 .left{
-    /* background-color: brown; */
 
     font-size: 2rem;
-    width: 50%;
-    margin: auto ;
+    width: 400px;
     text-align: center;
 }
 .section1 .right{
     width: 30%;
-    margin: auto;
-    /* background-color: yellowgreen; */
 }
 
 .section1 .right img{
@@ -80,12 +76,12 @@ nav ul li a:hover {
 }
 
 .textblock{
-    margin: 100px 5vw;
+    margin: 20px 5vw;
     line-height: 2;
 }
 
 .para{
-    margin: 30px;
+    margin: 25px 30px;
 }
 
 footer .link a{
@@ -99,7 +95,6 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 120vh;
 }
 
 .project{
@@ -141,7 +136,6 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
     width: 80vw;
     margin: 5vh;
 }
@@ -157,9 +151,9 @@ main{
     width: 100%;
 }
 
-.contactform textarea{
+/* .contactform textarea{
     min-height: 200px;
-}
+} */
 
 .contactform button{
     margin: 30px 0;

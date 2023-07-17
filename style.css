@@ -99,6 +99,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 120vh;
 }
 
 .project{
@@ -132,8 +133,8 @@ main{
 .project .right{
     width: 50%;
 }
-.container p{
-    margin: 5vh;
+#contactme{
+    margin: 0 0 5vh 0 ;
 }
 .contactform{
     display: flex;
@@ -154,6 +155,10 @@ main{
     color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
     width: 100%;
+}
+
+.contactform textarea{
+    min-height: 200px;
 }
 
 .contactform button{
